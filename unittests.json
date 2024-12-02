@@ -1,0 +1,10 @@
+{
+    "files": [
+        "test_main.py",
+        "test_numeric_input.py",
+        "test_lottery.py",
+        "test_money.py",
+        "test_menu.py",
+        "test_authenticate.py"
+    ]
+}

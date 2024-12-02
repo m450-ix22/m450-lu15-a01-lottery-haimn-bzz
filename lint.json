@@ -1,0 +1,20 @@
+{
+    "files": [
+        "main.py",
+        "numeric_input.py",
+        "lottery.py",
+        "money.py",
+        "menu.py",
+        "authenticate.py",
+        "person.py",
+        "ticket.py",
+        "test_main.py",
+        "test_numeric_input.py",
+        "test_lottery.py",
+        "test_money.py",
+        "test_menu.py",
+        "test_authenticate.py"
+    ],
+    "ignore": [],
+    "max": 0
+}

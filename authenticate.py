@@ -2,31 +2,24 @@ from person import Person
 
 
 def login():
+    """
+    Simuliert einen Login-Prozess und gibt den angemeldeten Benutzer zurück.
+    """
     people_list = load_people()
-    person = None
-    while person is None:
-        password = input('Passwort > ')
-        for temp in people_list:
-            if temp.password == password:
-                person = temp
-                break
-            else:
-                print('Passwort falsch')
-
-    return person
+    while True:
+        password = input("Passwort > ")
+        for person in people_list:
+            if person.password == password:
+                return person
+        print("Passwort falsch")
 
 
 def load_people():
     """
-    loads the list of people
-    :return: list of person-objects
+    Erstellt eine Liste von Benutzerobjekten.
     """
-    people_list = list()
-    people_list.append(Person('Inga', 'geheim', 14.00))
-    people_list.append(Person('Peter', 'secrät', 7.00))
-    people_list.append(Person('Beatrice', 'passWORT', 23.00))
-    return people_list
-
-
-if __name__ == '__main__':
-    pass
+    return [
+        Person("Inga", "geheim", 14.0),
+        Person("Peter", "secrät", 7.0),
+        Person("Beatrice", "passWORT", 23.0),
+    ]
